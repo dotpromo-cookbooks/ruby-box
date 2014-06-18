@@ -23,7 +23,6 @@ task style: ['style:chef', 'style:ruby']
 desc 'Run ChefSpec examples'
 RSpec::Core::RakeTask.new(:spec)
 
-
 # Default
 task default: ['style', 'spec', 'integration:vagrant']
 
@@ -44,4 +43,3 @@ begin
 rescue LoadError
   puts '>>>>> Kitchen gem not loaded, omitting tasks' unless ENV['CI']
 end
-
