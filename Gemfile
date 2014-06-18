@@ -22,5 +22,5 @@ group :development do
   gem 'rspec', '~> 3.0.0'
   gem 'chef-zero'
   gem 'rvm' # fix rvm chef recipe
-  gem 'pry
+  gem 'pry'
 end
