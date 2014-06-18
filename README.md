@@ -1,6 +1,7 @@
 dotpromo-ruby-box Cookbook
 ================================
-Ruby lego as chef receipt
+[![Build Status](https://travis-ci.org/dotpromo-cookbooks/ruby-box.svg?branch=master)](https://travis-ci.org/dotpromo-cookbooks/ruby-box)
+Ruby box lego part for your server
 
 Requirements
 ------------
