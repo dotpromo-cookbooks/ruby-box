@@ -9,7 +9,7 @@ description 'Install rvm, ruby and create deployer user'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 
 supports 'ubuntu', '>= 12.04'
-supports 'centos', '>= 6.5', '< 7'
+supports 'centos', '~> 6.5'
 
 depends 'users'
 depends 'rvm'
