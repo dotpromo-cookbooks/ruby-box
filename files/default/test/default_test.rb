@@ -16,7 +16,7 @@ describe_recipe 'dotpromo-ruby-box::default' do
   end
   it 'should have default ruby' do
     result = assert_sh '/home/deployer/.rvm/rubies/default/bin/ruby --version'
-    assert_includes result, 'ruby 2.1.2'
+    assert_includes result, 'ruby 2.2.0'
   end
   describe 'users and groups' do
     it 'creates a deployer user' do
