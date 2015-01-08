@@ -6,8 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe 'users::sysadmins'
-users_manage 'deployer'
+include_recipe 'users'
+users_manage 'deployer' do
+  group_name "wheel"
+end
 include_recipe 'sudo'
 
 if platform_family?('rhel')
