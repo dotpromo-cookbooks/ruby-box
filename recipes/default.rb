@@ -25,4 +25,11 @@ node['dotpromo_ruby_box']['packages'].each do |k|
   package k
 end
 
+execute "Adding gpg key to deployer" do
+  environment ({"HOME" => "/home/deployer"})
+  command "`which gpg2 || which gpg` --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3;"
+  user 'deployer'
+  group 'deployer'
+end
+
 include_recipe 'rvm::user'

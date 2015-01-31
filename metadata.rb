@@ -1,5 +1,5 @@
 name 'dotpromo-ruby-box'
-version '0.2'
+version '0.3'
 
 maintainer '.PROMO Inc.'
 maintainer_email 'Alexander Simonov <alex@simonov.me>'
@@ -12,7 +12,7 @@ supports 'ubuntu', '>= 12.04'
 supports 'centos', '>= 6.5'
 
 depends 'users', '>= 1.7.0'
-depends 'rvm'
+depends 'rvm', '>= 0.9.2'
 depends 'apt'
 depends 'sudo'
 depends 'yum-repoforge'

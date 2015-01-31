@@ -1,21 +1,11 @@
 source "https://rubygems.org"
 group :lint do
   gem 'foodcritic', '>= 4.0.0'
-  gem 'rubocop', '~> 0.18'
+  gem 'rubocop', '>= 0.24'
 end
 
-group :unit do
-  gem 'berkshelf',  '>= 3.1'
-  gem 'chefspec',   '>= 4.0'
-end
-
-group :kitchen_common do
-  gem 'test-kitchen', '~> 1.2'
-end
-
-group :kitchen_vagrant do
-  gem 'kitchen-vagrant', '~> 0.11'
-end
+gem 'berkshelf',  '>= 3.1'
+gem 'chef', '>= 12.0.3'
 
 group :development do
   gem 'rake'
@@ -23,4 +13,7 @@ group :development do
   gem 'chef-zero'
   gem 'rvm' # fix rvm chef recipe
   gem 'pry'
+  gem 'chefspec',   '>= 4.0'
+  gem 'test-kitchen', github: 'test-kitchen/test-kitchen'
+  gem 'kitchen-vagrant', '>= 0.11'
 end
