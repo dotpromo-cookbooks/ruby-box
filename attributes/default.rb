@@ -5,8 +5,8 @@ default['authorization']['sudo']['include_sudoers_d'] = true
 default['authorization']['sudo']['agent_forwarding'] = true
 default['rvm']['user_installs'] = [
     'user' =>  'deployer',
-    'rubies' => ['2.2.0'],
-    'default_ruby' => '2.2.0'
+    'rubies' => ['2.2.2'],
+    'default_ruby' => '2.2.2'
 ]
 default['dotpromo_ruby_box']['packages'] = %w(git curl htop atop screen vim)
 if platform_family?('rhel') && platform_version.to_i >= 7
